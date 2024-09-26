@@ -1,0 +1,149 @@
+
+body { 
+    font-family: 'Poppins';
+    background-color: hsl(0, 0%, 98%);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#light-heading {
+    font-weight: 200;
+    color: hsl(234, 12%, 34%);
+}
+
+#thick-heading {
+    font-weight: 600;
+    margin-top: -20px;
+    color: hsl(234, 12%, 34%);
+}
+
+#light-text {
+    font-weight: 200;
+    width: 28%;
+    margin-top: -10px;
+    color: hsl(229, 6%, 66%);
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 30px auto;
+}
+
+.flex-content {
+    margin: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    border-width: 3px 0px 0px 0px;
+    border-style: solid;
+    box-sizing: border-box;
+    box-shadow: 7px 7px 10px #cbced1, -5px -5px 10px white;
+    width: 60%;
+    /* height: 50%; */
+    background-color: hsl(30, 38%, 100%);
+}
+
+.flex-heading {
+    font-weight: 600;
+    color: hsl(234, 12%, 34%);
+}
+
+.flex-text {
+    font-weight: 200;
+    font-size: 15px;
+    margin-top: -15px;
+    line-height: 25px;
+    color: hsl(229, 6%, 66%);
+}
+
+.flex-image {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 40px;
+}
+
+.middle-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 115%;
+    margin: 0px -120px;
+}
+
+.cyan {
+    border-top-color: hsl(180, 62%, 55%);
+}
+
+.red {
+    border-top-color: hsl(0, 78%, 62%);
+}
+
+.orange {
+    border-top-color: hsl(34, 97%, 64%);
+}
+
+.blue {
+    border-top-color: hsl(212, 86%, 64%);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    border: 5px groove rgb(206, 31, 89);
+    background-color: rgb(165, 98, 121);
+    padding: 20px;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 100%); 
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .middle-content {
+    margin: 0px -70px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 768px) {
+
+    #light-text {
+    width: 65%;
+    }
+
+    .flex-container {
+    flex-direction: column;
+    }
+
+    .cyan, .blue {
+    width: 70%;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #light-text {
+    width: 60%;
+    }
+
+    .flex-container {
+    flex-direction: column;
+    }
+
+    .flex-content {
+    width: 85%;
+    }
+
+    .cyan, .blue {
+    width: 97%;
+    }
+}
